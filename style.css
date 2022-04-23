@@ -12,19 +12,29 @@
     --clr--btn--shadow--hover: #BAE5FC;
 
 }
+
 /*--X--X--X--X--GLOBAL--X--X--X--X--*/
+html,
+body {
+    /*--Because no one likes vertical scrolling--*/
+    max-width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--clr--background);
 }
 
 
 /*--X--X--X--X--CARDS--X--X--X--X--*/
-.card img{
+.card img {
     /*--Adding height to images, To unify and maintain layout--*/
     min-height: 5rem;
-    height:10rem;
+    height: 10rem;
 }
-.card-title{
+
+.card-title {
     /*--Ensure same height for single line titles--*/
     min-height: 5rem;
     /*--adding d-flex flex-column justify-content-around does not work for some reason
@@ -33,18 +43,23 @@ body {
     flex-direction: column;
     justify-content: space-around;
 }
+
 .card {
     /*--Adding responsive width to card--*/
     width: 18rem;
     /*--Rounding card borders--*/
     border-radius: 3%;
+    /*--Center cards within container--*/
+    margin: 0 auto;
 }
+
 .card:hover {
     /*--Slightly Enlarge card--*/
     transform: scale(1.01);
     /*--Add Blurred shadow on card--*/
     box-shadow: 0px 0px 30px var(--clr--card--shadow--hover);
 }
+
 .card a.btn {
     /*Add border radius to avoid animation clipping*/
     border-radius: 1.6rem;
@@ -80,14 +95,20 @@ body {
         align-items: center;
     }
 }
+
 /*--Stop cards from coliding under 1400px screens--*/
 @media only screen and (max-width:1400px) and (min-width:992px) {
-    /*--Resise container to fill 100%of window no more no less--*/
-.container{
-max-width: 100vw;
-}
-/*--resize cards to prevent overlapping--*/
-.card{
-    max-width: 25vw;
-}
+
+    /*--Resise container to fill 100%of window no more no less
+    remove margin and padding to give room to cards--*/
+    .container {
+        min-width: 100vw;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    /*--resize cards to prevent overlapping--*/
+    .card {
+        max-width: 25vw;
+    }
 }
