@@ -36,183 +36,211 @@
     <!--
         Repeated content will only be commented on first child -> Cards will be the same yet comments will only be added on the first
     -->
+    <!--X-X-X-X-X-NAV-X-X-X-X-X-->
+    <!--max-width 10% of vw-->
+    <nav class="position-absolute w-10 h-100">
+        <div class="nav-brand mt-3 mb-3 p-5 lead text-center border
+        border-secondary rounded"><b>
+                <h1>BT:5</h1>
+            </b></div>
+        <ul class="navbar-nav p-2 d-flex flex-column align-items-center">
+            <hr class="w-50">
+            <li class="nav-item w-100"><a href="#office"
+                    class="nav-link btn text-secondary text-uppercase text-center mb-2"><b>Office Tour</b></a></li>
+            <hr class="w-50">
+            <li class="nav-item w-100"><a href="Tools"
+                    class="nav-link btn text-secondary text-uppercase text-center mb-2"><b>Tools</b></a></li>
+            <hr class="w-50">
+            <li class="nav-item w-100"><a href="#Affiliate"
+                    class="nav-link btn text-secondary text-uppercase text-center mb-2"><b>Affiliate</b></a></li>
+            <hr class="w-50">
+            <li class="nav-item w-100"><a href="#Coaching"
+                    class="nav-link btn text-secondary text-uppercase text-center mb-2"><b>Coaching</b></a></li>
+            <hr class="w-50">
+            <li class="nav-item w-100"><a href="#Refferal"
+                    class="nav-link btn text-secondary text-uppercase text-center mb-2"><b>Refferal</b></a></li>
+            <hr class="w-50">
+            <li class="nav-item w-100"><a href="#Support"
+                    class="nav-link btn text-secondary text-uppercase text-center mb-2"><b>Support</b></a></li>
+            <hr class="w-50">
+            <li class="nav-item w-100"><a href="#Trainings"
+                    class="nav-link btn text-secondary text-uppercase text-center mb-2"><b>Trainings</b></a></li>
+            <hr class="w-50">
+            <li class="nav-item w-100"><a href="#Sales"
+                    class="nav-link btn text-secondary text-uppercase text-center mb-2"><b>Sales</b></a></li>
+            <hr class="w-50">
+        </ul>
 
+    </nav>
 
     <!--X-X-X-X-X-CARD-GRID-X-X-X-X-X-->
     <!--Vertical-center Will make sure card container stays in the middle only activates on 992px or bigger screens-->
-<div class="vertical-center">
-    <!--Container, cause bootstrap-->
-    <div class="container">
-        <!--Row 1 of 2 to contain cards-->
-        <div class="row">
-            <!--Responsive collums Small:12/12=1 Med:12/6=2 Large:12/3=4 -- Margins for breathing On collumns so it takes over on mobile -->
-            <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mb-3">
-                <!--Creating Card-->
-                <!--Centering text, adding small marginm ensuring it uses available height and adding small margin for whitespace-->
-                <div class="card text-center p-2 h-100 mt-3">
-                    <!--Adding SVG image for responsiveness, small amounnt of whitespace for breathing-->
-                    <!--Image Height is done in css to maintain layout between cards-->
-                    <img src="./assets/images/Office.svg" alt="Office Building"
-                        class="card-img-top mt-5 mb-3">
+    <div class="vertical-center">
+        <!--Container, cause bootstrap-->
+        <div class="container">
+            <!--Row 1 of 2 to contain cards-->
+            <div class="row">
+                <!--Responsive collums Small:12/12=1 Med:12/6=2 Large:12/3=4 -- Margins for breathing On collumns so it takes over on mobile -->
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mb-3">
+                    <!--Creating Card-->
+                    <!--Centering text, adding small marginm ensuring it uses available height-->
+                    <div class="card text-center p-2 h-100">
+                        <!--Adding SVG image for responsiveness, small amounnt of whitespace for breathing-->
+                        <!--Image Height is done in css to maintain layout between cards-->
+                        <img src="./assets/images/Office.svg" alt="Office Building" class="card-img-top mt-5 mb-3">
                         <!--Turn card body into column flex box to keep everything in center-->
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h6 class="card-title text-muted lead p-2">
-                            <!-- d-flex flex-column justify-content-around added in css  due to no changes-->
-                            <b>Your EMP Back OfficeTour</b>
-                        </h6>
-                        <!--Adding card text, breathing room in the bottom same style as title to give unison-->
-                        <p class="card-text mb-2 text-muted">
-                            Live 15 minutes of daily motivation,
-                            inspiration and education with EMP
-                            & World business leaders!
-                            Recommending.
-                        </p>
-                        <!--Simple 50% hr as spacer-->
-                        <hr class="w-50">
-                        <!--Creating buttons , made uppercase and Bold to give indication of a link
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h6 class="card-title text-muted lead p-2">
+                                <!-- d-flex flex-column justify-content-around added in css  due to no changes-->
+                                <b>Your EMP Back OfficeTour</b>
+                            </h6>
+                            <!--Adding card text, breathing room in the bottom same style as title to give unison-->
+                            <p class="card-text mb-2 text-muted">
+                                Live 15 minutes of daily motivation,
+                                inspiration and education with EMP
+                                & World business leaders!
+                                Recommending.
+                            </p>
+                            <!--Simple 50% hr as spacer-->
+                            <hr class="w-50">
+                            <!--Creating buttons , made uppercase and Bold to give indication of a link
                         Most styling done in CSS-->
-                        <a href="#" class="btn text-secondary text-uppercase"><b>Learn More</b></a>
+                            <a href="#" class="btn text-secondary text-uppercase"><b>Learn More</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mb-3">
+                    <div class="card text-center p-2 h-100">
+                        <img src="./assets/images/ToolOverview.svg" alt="Overview" class="card-img-top mt-5 mb-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h6 class="card-title text-muted lead p-2">
+                                <b>An Overview of Insider Tools & Benefits</b>
+                            </h6>
+                            <p class="card-text mb-2 text-muted">
+                                Live 15 minutes of daily motivation,
+                                inspiration and education with EMP
+                                & World business leaders!
+                                Recommending.
+                            </p>
+                            <hr class="w-50">
+                            <a href="#" class="btn text-secondary text-uppercase h-2"><b>Learn More</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mb-3">
+                    <div class="card text-center p-2 h-100">
+                        <img src="./assets/images/Affiliate.svg" alt="Affiliate" class="card-img-top mt-5 mb-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h6 class="card-title text-center text-muted lead p-2">
+                                <b>The EMP Affiliate Compensation Plan</b>
+                            </h6>
+                            <p class="card-text mb-2 text-muted">
+                                Live 15 minutes of daily motivation,
+                                inspiration and education with EMP
+                                & World business leaders!
+                                Recommending.
+                            </p>
+                            <hr class="w-50">
+                            <a href="#" class="btn text-secondary text-uppercase h-2"><b>Learn More</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mb-3">
+                    <div class="card text-center p-2 h-100">
+                        <img src="./assets/images/Coaching.svg" alt="Coaching" class="card-img-top mt-5 mb-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h6 class="card-title text-muted lead p-2">
+                                <b>How The EMP Coaching</b>
+                            </h6>
+                            <p class="card-text mb-2 text-muted">
+                                Live 15 minutes of daily motivation,
+                                inspiration and education with EMP
+                                & World business leaders!
+                                Recommending.
+                            </p>
+                            <hr class="w-50">
+                            <a href="#" class="btn text-secondary text-uppercase h-2"><b>Learn More</b></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mb-3">
-                <div class="card text-center p-2 h-100 mt-3">
-                    <img src="./assets/images/ToolOverview.svg" alt="Overview"
-                        class="card-img-top mt-5 mb-3">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h6 class="card-title text-muted lead p-2">
-                            <b>An Overview of Insider Tools & Benefits</b>
-                        </h6>
-                        <p class="card-text mb-2 text-muted">
-                            Live 15 minutes of daily motivation,
-                            inspiration and education with EMP
-                            & World business leaders!
-                            Recommending.
-                        </p>
-                        <hr class="w-50">
-                        <a href="#" class="btn text-secondary text-uppercase h-2"><b>Learn More</b></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mb-3">
-                <div class="card text-center p-2 h-100 mt-3">
-                    <img src="./assets/images/Affiliate.svg" alt="Affiliate" class="card-img-top mt-5 mb-3">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h6 class="card-title text-center text-muted lead p-2">
-                            <b>The EMP Affiliate Compensation Plan</b>
-                        </h6>
-                        <p class="card-text mb-2 text-muted">
-                            Live 15 minutes of daily motivation,
-                            inspiration and education with EMP
-                            & World business leaders!
-                            Recommending.
-                        </p>
-                        <hr class="w-50">
-                        <a href="#" class="btn text-secondary text-uppercase h-2"><b>Learn More</b></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mb-3">
-                <div class="card text-center p-2 h-100 mt-3">
-                    <img src="./assets/images/Coaching.svg" alt="Coaching"
-                        class="card-img-top mt-5 mb-3">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h6 class="card-title text-muted lead p-2">
-                            <b>How The EMP Coaching</b>
-                        </h6>
-                        <p class="card-text mb-2 text-muted">
-                            Live 15 minutes of daily motivation,
-                            inspiration and education with EMP
-                            & World business leaders!
-                            Recommending.
-                        </p>
-                        <hr class="w-50">
-                        <a href="#" class="btn text-secondary text-uppercase h-2"><b>Learn More</b></a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mb-3">
-                <div class="card text-center p-2 h-100 mt-3">
-                    <img src="./assets/images/Referral.svg" alt="Referral"
-                        class="card-img-top mt-5 mb-3">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h6 class="card-title text-muted lead p-2">
-                            <b>How To Refer People & Make Money</b>
-                        </h6>
-                        <p class="card-text mb-2 text-muted">
-                            Live 15 minutes of daily motivation,
-                            inspiration and education with EMP
-                            & World business leaders!
-                            Recommending.
-                        </p>
-                        <hr class="w-50">
-                        <a href="#" class="btn text-secondary text-uppercase h-2"><b>Learn More</b></a>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mb-3">
+                    <div class="card text-center p-2 h-100">
+                        <img src="./assets/images/Referral.svg" alt="Referral" class="card-img-top mt-5 mb-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h6 class="card-title text-muted lead p-2">
+                                <b>How To Refer People & Make Money</b>
+                            </h6>
+                            <p class="card-text mb-2 text-muted">
+                                Live 15 minutes of daily motivation,
+                                inspiration and education with EMP
+                                & World business leaders!
+                                Recommending.
+                            </p>
+                            <hr class="w-50">
+                            <a href="#" class="btn text-secondary text-uppercase h-2"><b>Learn More</b></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mb-3">
-                <div class="card text-center p-2 h-100 mt-3">
-                    <img src="./assets/images/Support.svg" alt="Support"
-                        class="card-img-top mt-5 mb-3">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h6 class="card-title text-muted lead p-2">
-                            <b>Getting Started: <br> The Essential Trainings</b>
-                        </h6>
-                        <p class="card-text mb-2 text-muted">
-                            Live 15 minutes of daily motivation,
-                            inspiration and education with EMP
-                            & World business leaders!
-                            Recommending.
-                        </p>
-                        <hr class="w-50">
-                        <a href="#" class="btn text-secondary text-uppercase h-2"><b>Learn More</b></a>
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mb-3">
+                    <div class="card text-center p-2 h-100">
+                        <img src="./assets/images/Support.svg" alt="Support" class="card-img-top mt-5 mb-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h6 class="card-title text-muted lead p-2">
+                                <b>How To Get Help & Support</b>
+                            </h6>
+                            <p class="card-text mb-2 text-muted">
+                                Live 15 minutes of daily motivation,
+                                inspiration and education with EMP
+                                & World business leaders!
+                                Recommending.
+                            </p>
+                            <hr class="w-50">
+                            <a href="#" class="btn text-secondary text-uppercase h-2"><b>Learn More</b></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mb-3">
-                <div class="card text-center p-2 h-100 mt-3">
-                    <img src="./assets/images/Training.svg" alt="Training"
-                        class="card-img-top mt-5 mb-3">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h6 class="card-title text-muted lead p-2">
-                            <b>The Fastest Way To Get Your First Sale</b>
-                        </h6>
-                        <p class="card-text mb-2 text-muted">
-                            Live 15 minutes of daily motivation,
-                            inspiration and education with EMP
-                            & World business leaders!
-                            Recommending.
-                        </p>
-                        <hr class="w-50">
-                        <a href="#" class="btn text-secondary text-uppercase h-2"><b>Learn More</b></a>
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mb-3">
+                    <div class="card text-center p-2 h-100">
+                        <img src="./assets/images/Training.svg" alt="Training" class="card-img-top mt-5 mb-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h6 class="card-title text-muted lead p-2">
+                                <b>Getting Started: <br>The Essential Trainings</b>
+                            </h6>
+                            <p class="card-text mb-2 text-muted">
+                                Live 15 minutes of daily motivation,
+                                inspiration and education with EMP
+                                & World business leaders!
+                                Recommending.
+                            </p>
+                            <hr class="w-50">
+                            <a href="#" class="btn text-secondary text-uppercase h-2"><b>Learn More</b></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mb-3">
-                <div class="card text-center p-2 h-100 mt-3">
-                    <img src="./assets/images/Sale_Success.svg" alt="First Sale"
-                        class="card-img-top mt-5 mb-3">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h6 class="card-title text-muted lead p-2">
-                            <b>Your EMP Back OfficeTour</b>
-                        </h6>
-                        <p class="card-text mb-2 text-muted">
-                            Live 15 minutes of daily motivation,
-                            inspiration and education with EMP
-                            & World business leaders!
-                            Recommending.
-                        </p>
-                        <hr class="w-50">
-                        <a href="#" class="btn text-secondary text-uppercase h-2"><b>Learn More</b></a>
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mb-3">
+                    <div class="card text-center p-2 h-100">
+                        <img src="./assets/images/Sale_Success.svg" alt="First Sale" class="card-img-top mt-5 mb-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h6 class="card-title text-muted lead p-2">
+                                <b>The Fastest Way To Get Your First Sale</b>
+                            </h6>
+                            <p class="card-text mb-2 text-muted">
+                                Live 15 minutes of daily motivation,
+                                inspiration and education with EMP
+                                & World business leaders!
+                                Recommending.
+                            </p>
+                            <hr class="w-50">
+                            <a href="#" class="btn text-secondary text-uppercase h-2"><b>Learn More</b></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 </body>
 
