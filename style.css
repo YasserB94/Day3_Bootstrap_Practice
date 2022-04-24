@@ -2,14 +2,18 @@
 :root {
     /*--COLORS--*/
     --clr--background: #E8EFF5;
+    /*--Theme--*/
+    --clr--theme--green:#70C275;
+    --clr--theme--pink:#FF6484;
+    /*--NAV--*/
+    --clr--nav--bg:#ffffff;
     /*--Cards--*/
     --clr--card--shadow--hover: #CFD6E4;
-    /*--Card Buttons--*/
+    /*--Buttons--*/
     --clr--btn--txt--hover: white;
     --clr--btn--bg--hover: #64A8EE;
     --clr--btn--shadow--hover: #BAE5FC;
 }
-
 /*--X--X--X--X--GLOBAL--X--X--X--X--*/
 html,
 body {
@@ -20,19 +24,49 @@ body {
 
 
 }
-
 body {
     background-color: var(--clr--background);
     /*--Prevent bootstrap from adding weird extra scrollbars inside container--*/
     max-height: 100vh;
 }
+a.btn {
+    /*Add border radius to avoid animation clipping*/
+    border-radius: 1.6rem;
+    min-width: 100%;
+}
+a.btn:hover {
+    /*--Add Background color when button is hovered--*/
+    color: var(--clr--btn--txt--hover) !important;
+    background-color: var(--clr--btn--bg--hover);
+    /*--radius for Pill shape--*/
+    border-radius: 1.6rem;
+    /*--Add Blue shadow blur to button--*/
+    box-shadow: 0rem .35rem 1rem var(--clr--btn--shadow--hover) !important;
+}
+/*--X--X--X--X--NAVBAR--X--X--X--X--*/
+nav{
+  max-width: 10%; 
+}
+nav 
+
+.nav-brand{
+    color: var(--clr--theme--pink)!important;
+    background-color: var(--clr--theme--green);
+    max-width: 100%;
+}
+nav a.btn{
+
+}
 /*--X--X--X--X--CARDS--X--X--X--X--*/
+.container{
+    padding-left: 10%;
+    max-width: 90%;
+}
 .card img {
     /*--Adding height to images, To unify and maintain layout--*/
     min-height: 5rem;
     height: 10rem;
 }
-
 .card-title {
     /*--Ensure same height for single line titles--*/
     min-height: 5rem;
@@ -42,8 +76,6 @@ body {
     flex-direction: column;
     justify-content: space-around;
 }
-/* <div class="card text-center p-2 h-100 mt-3"> */
-
 .card {
     /*--Adding responsive width to card--*/
     width: 18rem;
@@ -51,58 +83,33 @@ body {
     border-radius: 3%;
     /*--Center cards within container--*/
     margin: 0 auto;
-}
 
+}
 .card:hover {
     /*--Slightly Enlarge card--*/
     transform: scale(1.01);
     /*--Add Blurred shadow on card--*/
     box-shadow: 0px 0px 30px var(--clr--card--shadow--hover);
 }
-
-.card a.btn {
-    /*Add border radius to avoid animation clipping*/
-    border-radius: 1.6rem;
-}
-
-.card a.btn:hover {
-    /*--Add Background color when button is hovered--*/
-    color: var(--clr--btn--txt--hover) !important;
-    background-color: var(--clr--btn--bg--hover);
-    /*--radius for Pill shape--*/
-    border-radius: 1.6rem;
-    /*--Add Blue shadow blur to button--*/
-    box-shadow: 0rem .35rem 1rem var(--clr--btn--shadow--hover) !important;
-}
-
 /*--MEDIA QUERIES FOR CARDS--*/
-/*--Card Custom CSS - Not found a way in Bootstrap 5--*/
-/*--Center content vertically on larger screens--*/
-@media only screen and (min-width:992px) and(min-height:1100px) {
-    .vertical-center {
-        /*--Setting fixed height of 100% of the viewport--*/
-        min-height: 100vh;
-        height: 100vh;
-        width: 100vw;
-        /*--Adding min-width for children just in case--*/
-        min-width: 100vw;
-        /*--Turning into flexbox--*/
-        display: flex;
-        /*--Align in center--*/
-        align-items: center;
-    }
-}
 /*--Stop cards from coliding under 1400px screens--*/
 @media only screen and (min-width:992px) and (max-width:1400px) {
     /*--Resise container to fill 100%of window no more no less
     remove margin and padding to give room to cards--*/
     .container {
-        min-width: 100vw;
+        min-width: 90vw;
         margin: 0%;
+        margin-left: 10%;
         padding: 0%;
     }
     /*--resize cards to prevent overlapping--*/
     .card {
-        max-width: 25vw;
+        max-width: 22.5vw;
     }
+}
+@media only screen and(min-width:992px) {
+    .vertical-center{
+        margin-top: 25rem!important;
+    }
+    
 }
