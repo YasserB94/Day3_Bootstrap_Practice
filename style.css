@@ -29,6 +29,7 @@ body {
     /*--Prevent bootstrap from adding weird extra scrollbars inside container--*/
     max-height: 100vh;
 }
+/*--Buttons--*/
 a.btn {
     /*Add border radius to avoid animation clipping*/
     border-radius: 1.6rem;
@@ -45,17 +46,17 @@ a.btn:hover {
 }
 /*--X--X--X--X--NAVBAR--X--X--X--X--*/
 nav{
+    /*--10% of vw for nav, 90 for body--*/
   max-width: 10%; 
 }
-nav 
-
 .nav-brand{
     color: var(--clr--theme--pink)!important;
     background-color: var(--clr--theme--green);
-    max-width: 100%;
+    max-width: 100%!important;
 }
-nav a.btn{
-
+.nav-brand.h1{
+    max-width: 100%!important;
+    overflow-x: hidden;
 }
 /*--X--X--X--X--CARDS--X--X--X--X--*/
 .container{
